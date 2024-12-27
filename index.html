@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laptop Store</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        /* Стили для модального окна */
+        #support-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        #support-modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            border-radius: 8px;
+        }
+
+        #support-modal-close {
+            float: right;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to the Laptop Store!</h1>
+    {{ if .IsLoggedIn }}
+    <a href="/logout">Log out</a>
+    <a href="/admin">Admin Panel</a>
+    <a href="/profile-edit">Profile Edit</a>
+    {{ else }}
+    <a href="/register">Register</a>
+    <a href="/login">Login</a>
+    {{ end }}
+</header>
+<form action="/" method="get">
+    <label for="filter">Filter:</label>
+    <input type="text" id="filter" name="filter" placeholder="Enter filter" value="{{ .Filter }}">
+    <button type="submit">Apply Filter</button>
+</form>
+<form action="/" method="get">
+    <input type="hidden" name="filter" value="{{ .Filter }}">
+    <label for="sort">Sort by:</label>
+    <select name="sort" id="sort">
+        <option value="">Default</option>
+        <option value="size" {{ if eq .SortBy "size" }}selected{{ end }}>Size</option>
+        <option value="price" {{ if eq .SortBy "price" }}selected{{ end }}>Price</option>
+    </select>
+    <button type="submit">Apply Sort</button>
+</form>
+
+<h2>Laptops:</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Size</th>
+        <th>Price</th>
+    </tr>
+    {{ range .Products }}
+    <tr>
+        <td>{{ .ID }}</td>
+        <td>{{ .Name }}</td>
+        <td>{{ .Size }}</td>
+        <td>${{ .Price }}</td>
+    </tr>
+    {{ end }}
+</table>
+<div>
+    <span>Page: {{ .Page }}</span>
+    <a href="?page={{ .PrevPage }}&pageSize={{ .PageSize }}">Previous</a>
+    <a href="?page={{ .NextPage }}&pageSize={{ .PageSize }}">Next</a>
+</div>
+
+<section id="news">
+    <h2>Latest News:</h2>
+    <ul>
+        {{ range .News }}
+        <li>
+            <strong>{{ .Title }}</strong>
+            <p>{{ .Description }}</p>
+            <p>Source: {{ .Source }}</p>
+            <a href="{{ .URL }}" target="_blank">Read more</a>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+
+<!-- Кнопка техподдержки -->
+<button id="support-button">Support</button>
+
+<!-- Модальное окно -->
+<div id="support-modal">
+    <div id="support-modal-content">
+        <span id="support-modal-close">&times;</span>
+        <h2>Support</h2>
+        <form action="/support" method="POST">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    const supportButton = document.getElementById('support-button');
+    const supportModal = document.getElementById('support-modal');
+    const supportClose = document.getElementById('support-modal-close');
+
+    supportButton.addEventListener('click', () => {
+        supportModal.style.display = 'block';
+    });
+
+    supportClose.addEventListener('click', () => {
+        supportModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === supportModal) {
+            supportModal.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

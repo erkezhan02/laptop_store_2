@@ -1,0 +1,60 @@
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-22T22:32:08+05:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-22T22:32:08+05:00"}
+{"level":"info","msg":"Error logging in: mongo: no documents in result","time":"2024-12-22T22:34:12+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-22T22:35:18+05:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-22T22:35:18+05:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-22T22:35:25+05:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-22T22:35:25+05:00"}
+{"level":"info","msg":"Error logging in: mongo: no documents in result","time":"2024-12-22T22:53:06+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-22T23:02:38+05:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-22T23:02:38+05:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-22T23:07:41+05:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-22T23:07:41+05:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-22T23:19:48+05:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-22T23:19:48+05:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-23T00:10:21+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-23T00:10:22+06:00"}
+{"level":"info","msg":"Error logging in: mongo: no documents in result","time":"2024-12-23T00:17:43+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-23T00:22:03+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-23T00:22:03+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-23T00:28:21+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-23T00:28:21+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-23T13:25:08+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-23T13:25:08+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-23T13:25:59+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-23T13:25:59+06:00"}
+{"level":"error","msg":"Error fetching user profile from MongoDB:mongo: no documents in result","time":"2024-12-23T14:08:18+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-23T14:14:15+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-23T14:14:15+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-23T14:20:08+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-23T14:20:08+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-23T14:26:54+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-23T14:26:54+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-23T14:47:05+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-23T14:47:05+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-23T14:50:44+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-23T14:50:44+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-23T14:50:55+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-23T14:50:55+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-23T23:27:13+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-23T23:27:13+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-27T13:10:00+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-27T13:10:00+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-27T13:36:10+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-27T13:36:13+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-27T13:36:59+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-27T13:36:59+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-27T13:42:48+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-27T13:42:48+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-27T13:42:59+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-27T13:42:59+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-27T13:43:41+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-27T13:43:41+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-27T13:43:52+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-27T13:43:52+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-27T13:46:27+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-27T13:46:27+06:00"}
+{"level":"info","msg":"Connected to MongoDB","time":"2024-12-27T14:06:05+06:00"}
+{"level":"info","msg":"Server is running at http://127.0.0.1:8080","time":"2024-12-27T14:06:05+06:00"}
+{"level":"info","msg":"Server is shutting down...","time":"2024-12-27T21:12:39+06:00"}
+{"level":"info","msg":"Server has stopped","time":"2024-12-27T21:12:39+06:00"}
